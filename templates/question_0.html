@@ -5,7 +5,7 @@
 {% block content %}
 <h1>{{title}}</h1>
 <p>{{question}}</p>
-<form action="/answers" method="post">
+<form action="/answers" name="q{{q_num}}" method="post">
     {% for choice in choices %}
     <label>
         <input type="radio" name="q0" value="{{choice}}" required>
