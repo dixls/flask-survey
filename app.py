@@ -51,5 +51,4 @@ def question(q_num):
 
 @app.route('/thanks')
 def thanks():
-    responses = session["responses"]
     return render_template('thanks.html', title=title)
