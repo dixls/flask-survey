@@ -4,7 +4,6 @@
 
 {% block content %}
 <h1>{{title}}</h1>
-<div class="content">
 {% with messages = get_flashed_messages(with_categories=true) %}
 {% if messages %}
 <section class = "message">
@@ -25,4 +24,3 @@
     <button>Submit</button>
 </form>
 {% endblock %}
-</div>
